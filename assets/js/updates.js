@@ -24,7 +24,9 @@ class Updates {
     $('#map-updates-modal .modal-body').empty();
 
     const data = this._json;
-    const snippet = $(`<p>${data.message}</p>`);
+    const snippet = $('<div>');
+    
+    snippet.append(`<p>${data.message}</p>`);
 
     data.lists.forEach(list => {
       snippet.append($(`
