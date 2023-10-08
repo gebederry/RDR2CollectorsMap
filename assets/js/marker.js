@@ -369,7 +369,7 @@ class Marker {
       .find('[data-text="map.copy_link"]')
       .click((e) => {
         e.preventDefault();
-        setClipboardText(`https://jeanropke.github.io/RDR2CollectorsMap/?m=${this.text}`);
+        setClipboardText(`https://map.185000.xyz/?m=${this.text}`);
       })
       .end()
       .find('[data-text="map.mark_important"]')

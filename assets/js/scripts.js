@@ -448,7 +448,7 @@ $("#search").on("input", function () {
 });
 
 $("#copy-search-link").on("click", function () {
-  setClipboardText(`http://jeanropke.github.io/RDR2CollectorsMap/?search=${$('#search').val()}`);
+  setClipboardText(`http://map.185000.xyz/?search=${$('#search').val()}`)
 });
 
 $("#clear-search").on("click", function () {
