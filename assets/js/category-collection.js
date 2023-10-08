@@ -35,6 +35,19 @@ class Weekly extends BaseCollection {
   }
   _insertMenuElements() {
     this.$menuEntry = $(`
+    <div class="header">
+      <span class="header-border"></span>
+      <h2 class="header-title">
+        <a class="no-style" href="https://rdo.185000.xyz/" target="_blank">
+          <div class="menu-option">
+            <span>
+              <span data-text="menu.link_to_another_map"></span>
+            </span>
+          </div>
+        </a>
+      </h2>
+      <span class="header-border"></span>
+    </div>
     <div id="weekly-container">
       <div class="header">
         <span class="header-border"></span>
