@@ -1438,7 +1438,7 @@
     "map.random_spot_metal_detector_chest.desc": "W tym miejscu wykopiesz skrzynię zawierającą losowy przedmiot, bardziej szczegółowe informacje na temat losowych przedmiotów znajdziesz na {int.random_spot.link}tej stronie Wiki{int.end.link}.",
     "map.random_spot_metal_detector_shallow.desc": "W tym miejscu wykopiesz losowy element z płytkiej ziemi, bardziej szczegółowe informacje na temat losowych przedmiotów znajdziesz na {int.random_spot.link}tej stronie Wiki{int.end.link}.",
     "map.random_spot_shovel.desc": "W tym miejscu znajdziesz losowy przedmiot, więcej informacji o losowych przedmiotach przeczytasz w {int.random_spot.link}tabeli losowych przedmiotów{int.end.link}.",
-    "map.attribution_prefix": "Współtwórcy mapy kolekcjonera",
+    "map.attribution_prefix": "小莉的镜像站",
     "menu.clear_important_items": "Usuń podświetlanie ważnych przedmiotów",
     "menu.modal_clear_important_items_body": "Ta opcja usunie podświetlenie ze wszystkich ważnych przedmiotów. Tej operacji nie można cofnąć.",
     "menu.modal_clear_important_items_title": "Usunąć podświetlenia?",

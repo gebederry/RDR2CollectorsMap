@@ -120,7 +120,7 @@ const MapBase = {
     MapBase.map.addControl(
       L.control.attribution({
         position: 'bottomright',
-        prefix: '<a target="_blank" href="https://github.com/jeanropke/RDR2CollectorsMap/blob/master/CONTRIBUTORS.md" data-text="map.attribution_prefix">Collectors Map Contributors</a>'
+        prefix: '<a target="_blank" data-text="map.attribution_prefix">小莉的镜像站</a>'
       })
     );
 

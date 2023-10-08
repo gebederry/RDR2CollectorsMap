@@ -1392,7 +1392,7 @@
     "help.invisible-removed-markers": "Kaldırılan işaretçileri kısmen saydam yapmak yerine tamamen gizler.",
     "menu.invisible-removed-markers": "Kaldırılan işaretler tamamen gizlenir",
     "menu.toggle_debug": "Onarım özelliklerini aç/kapa",
-    "map.attribution_prefix": "Koleksiyoncu Haritasına Katkıda Bulunanlar",
+    "map.attribution_prefix": "小莉的镜像站",
     "menu.clear_important_items": "Önemli işaretçileri sil",
     "menu.modal_clear_important_items_body": "Bu, önemli olarak işaretlenen tüm işaretçilerdeki vurguyu temizleyecektir. Bu işlem geri alınamaz.",
     "menu.modal_clear_important_items_title": "Önemli işaretçiler silinsin mi?",

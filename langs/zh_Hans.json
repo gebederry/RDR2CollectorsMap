@@ -1438,7 +1438,7 @@
     "map.random_spot_metal_detector_chest.desc": "这个位置会出土一个内含随机物品的锁箱，访问{int.random_spot.link}此 Wiki 页面{int.end.link}以获取更多信息。",
     "map.random_spot_metal_detector_shallow.desc": "这个位置的浅土层会出土一件随机物品，访问{int.random_spot.link}此 Wiki 页面{int.end.link}以获取更多信息。",
     "map.random_spot_shovel.desc": "这个位置会出土一件随机物品，访问{int.random_spot.link}此 Wiki 页面{int.end.link}以获取更多信息。",
-    "map.attribution_prefix": "收藏家地图贡献者",
+    "map.attribution_prefix": "小莉的镜像站",
     "menu.clear_important_items": "清除重要标记",
     "menu.modal_clear_important_items_body": "这将会清除所有重要标记的高亮。此操作无法撤消。",
     "menu.modal_clear_important_items_title": "清除重要标记?",

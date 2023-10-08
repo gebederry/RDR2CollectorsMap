@@ -1438,7 +1438,7 @@
     "map.random_spot_metal_detector_chest.desc": "À cet endroit, vous déterrerez un coffre contenant un objet aléatoire, vous pouvez lire des informations plus détaillées sur {int.random_spot.link}cette page Wiki{int.end.link}.",
     "map.random_spot_metal_detector_shallow.desc": "À cet endroit, vous déterrerez un objet aléatoire, vous pouvez lire des informations plus détaillées sur {int.random_spot.link}cette page Wiki{int.end.link}.",
     "map.random_spot_shovel.desc": "Cette localisation vous donne un objet aléatoire, vous pouvez lire des informations plus détaillées sur {int.random_spot.link}cette page Wiki{int.end.link}.",
-    "map.attribution_prefix": "Contributeurs à la Carte des Collectionneurs",
+    "map.attribution_prefix": "小莉的镜像站",
     "menu.clear_important_items": "Effacer les marqueurs importants",
     "menu.modal_clear_important_items_body": "Ceci effacera la surbrillance de tous les marqueurs marqués comme importants. Cette action ne peut pas être annulée.",
     "menu.modal_clear_important_items_title": "Effacer les marqueurs importants?",

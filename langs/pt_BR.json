@@ -1435,7 +1435,7 @@
     "help.invisible-removed-markers": "Oculta completamente os marcadores removidos em vez de torná-los parcialmente transparentes.",
     "menu.invisible-removed-markers": "Esconda completamente os marcadores removidos",
     "menu.toggle_debug": "Ativar recursos de debug",
-    "map.attribution_prefix": "Colaboradores do Mapa do Colecionador",
+    "map.attribution_prefix": "小莉的镜像站",
     "menu.clear_important_items": "Limpar marcadores importantes",
     "menu.modal_clear_important_items_body": "Isso vai apagar todos os marcadores marcados como importante. Essa ação não pode ser desfeita.",
     "menu.modal_clear_important_items_title": "Limpar marcadores importantes?",

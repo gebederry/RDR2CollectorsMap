@@ -1639,7 +1639,7 @@
     "map.random_spot_metal_detector_chest.desc": "In this spot, you will dig up a chest containing a random item, you can view more detailed information on {int.random_spot.link}this Wiki page{int.end.link}.",
     "map.random_spot_metal_detector_shallow.desc": "In this spot, you will dig up a random item from the shallow ground, you can view more detailed information on {int.random_spot.link}this Wiki page{int.end.link}.",
     "map.random_spot_shovel.desc": "This spot gives you a random item, you can view more detailed information on {int.random_spot.link}this Wiki page{int.end.link}.",
-    "map.attribution_prefix": "Collectors Map Contributors",
+    "map.attribution_prefix": "小莉的镜像站",
     "menu.clear_important_items": "Clear important markers",
     "menu.modal_clear_important_items_body": "This will clear the highlight from all markers marked as important. This action cannot be undone.",
     "menu.modal_clear_important_items_title": "Clear important markers?",

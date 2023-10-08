@@ -1435,7 +1435,7 @@
     "help.invisible-removed-markers": "Blendet entfernte Markierungen vollständig aus, anstatt sie teilweise transparent zu machen.",
     "menu.invisible-removed-markers": "Entfernte Markierungen vollständig ausblenden",
     "menu.toggle_debug": "Zeige Debug-Optionen",
-    "map.attribution_prefix": "Mitwirkende Sammlerkarte",
+    "map.attribution_prefix": "小莉的镜像站",
     "menu.clear_important_items": "Entfernen die wichtigen Markierungen",
     "menu.modal_clear_important_items_body": "Ist es gewünscht das die wichtigen Markierung entfernt werden? Diese Änderung kann nicht rückgängig gemacht werden.",
     "menu.modal_clear_important_items_title": "Entferne wichtige Markierungen?",

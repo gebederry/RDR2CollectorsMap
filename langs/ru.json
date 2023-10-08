@@ -1436,7 +1436,7 @@
     "menu.invisible-removed-markers": "Полностью спрятать скрытые метки",
     "menu.toggle_debug": "Функция отладки (eng)",
     "map.random_spot_metal_detector_chest.desc": "Здесь можно получить сундук со случайным предметом. Более подробно о метке можно узнать в этом {int.random_spot.link}руководстве{int.end.link} (eng).",
-    "map.attribution_prefix": "Авторы карты коллекционеров",
+    "map.attribution_prefix": "小莉的镜像站",
     "menu.clear_important_items": "Сброс важных меток",
     "menu.modal_clear_important_items_body": "Эта функция позволит сбросить все метки, отмеченные как важные.",
     "menu.modal_clear_important_items_title": "Сбросить важные метки?",

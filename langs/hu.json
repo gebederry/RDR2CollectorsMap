@@ -1435,7 +1435,7 @@
     "help.invisible-removed-markers": "Teljesen elrejti az eltávolított jelzőket, ahelyett, hogy részben átlátszóvá tenné.",
     "menu.invisible-removed-markers": "Teljesen elrejti az eltávolított jelölőket",
     "menu.toggle_debug": "Fejlesztői funkciók ki-/bekapcsolása",
-    "map.attribution_prefix": "Gyűjtögető Térkép Közreműködői",
+    "map.attribution_prefix": "小莉的镜像站",
     "menu.clear_important_items": "Fontos jelölők törlése",
     "menu.modal_clear_important_items_body": "Ez törli a kiemelést az összes fontosként megjelölt markertől. Ez a művelet nem visszavonható.",
     "menu.modal_clear_important_items_title": "Törlöd a fontos jelölőket?",

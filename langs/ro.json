@@ -1435,7 +1435,7 @@
     "help.invisible-removed-markers": "Ascunde complet macajele eliminate în loc să le facă parțial transparente.",
     "menu.invisible-removed-markers": "Ascunde complet marcajele eliminate",
     "menu.toggle_debug": "Comută funcțiile de depanare",
-    "map.attribution_prefix": "Contribuitori hartă colectori",
+    "map.attribution_prefix": "小莉的镜像站",
     "menu.clear_important_items": "Curăță marcajele importante",
     "menu.modal_clear_important_items_body": "Această funcție va șterge evidențierea tuturor marcajelor însemnate ca importante. Această acțiune nu poate fi anulată.",
     "menu.modal_clear_important_items_title": "Curăță marcajele importante?",
