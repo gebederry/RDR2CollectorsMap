@@ -1922,5 +1922,5 @@
     "menu.modal_import_rdo_inventory_step_3": "3. 来到 Social Club 网站，打开浏览器开发者工具的控制台/Console (F12)，粘贴步骤 2 中的脚本并按回车键。",
     "menu.modal_import_rdo_inventory_final": "如果一切顺利，将会下载一个包含您库存数据的文件。点击下方的按钮导入即可。",
     "menu.modal_import_rdo_inventory_manual": "手动导入",
-    "menu.modal_import_rdo_inventory_extension": "您可以使用此扩展来同步库存。只需安装然后一键。 兼容基于 Chromium 的浏览器，如 Brave、Google Chrome、Microsoft Edge 以及 Opera。"
+    "menu.modal_import_rdo_inventory_extension": "⛔小莉的镜像站暂时无法使用插件来快捷地导入角色库存。"
 }
