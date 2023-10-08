@@ -355,14 +355,14 @@
   "endTime": 1696809599,
   "arrowhead": 2,
   "bottle": 3,
-  "card": 3,
   "coin": 1,
   "egg": 2,
   "flower": 1,
-  "heirloom": 1,
-  "jewelry": 3,
   "random": 6,
-  "fossil": 2,
+  "lost_jewelry": 3,
+  "tarot_cards": 3,
+  "fossils": 2,
+  "heirlooms": 1,
   "date": "2023-10-08"
  }
 ]

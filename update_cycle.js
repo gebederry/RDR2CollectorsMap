@@ -18,8 +18,25 @@ cron('0 2 * * *', async () => {
     })
 
     if (matchingCycle) {
+      // 映射对象，将旧键名映射到新键名
+      const keyMappings = {
+        jewelry: 'lost_jewelry',
+        card: 'tarot_cards',
+        fossil: 'fossils',
+        heirloom: 'heirlooms'
+      }
+
+      // 修改键名
+      for (const oldKey in keyMappings) {
+        if (matchingCycle.hasOwnProperty(oldKey)) {
+          matchingCycle[keyMappings[oldKey]] = matchingCycle[oldKey]
+          delete matchingCycle[oldKey]
+        }
+      }
+
       // 添加日期属性
       matchingCycle.date = currentDate
+
       let existingData = JSON.parse(fs.readFileSync('data/cycles.json'))
       // 移除第一个元素
       existingData.shift()
