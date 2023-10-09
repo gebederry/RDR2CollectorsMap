@@ -5,8 +5,10 @@ const cron = require('croner')
 // 设置定时任务，每天的02:00执行一次
 cron('0 2 * * *', async () => {
   try {
-    // 获取当前日期 yyyy-mm-dd
-    const currentDate = new Date().toISOString().split('T')[0]
+    // 获取当前日期 yyyy-mm-dd，UTC+8 时区
+    const utc8Date = new Date()
+    utc8Date.setUTCHours(utc8Date.getUTCHours() + 8)
+    const currentDate = utc8Date.toISOString().split('T')[0]
 
     const data = (await axios.get('https://api.rdo.gg/cycles/')).data
     // 在cycles数组中查找匹配当前日期的元素
