@@ -122,7 +122,7 @@ const MapBase = {
       L.control.attribution({
         position: 'bottomright',
         prefix:
-          '小莉的镜像站 | 🗨️ <a target="_blank" href="https://qm.qq.com/q/31SDG58TXy">248856433</a>'
+          '小莉的镜像站 | <i class="fa-brands fa-qq fa-fade" style="color: #ffffff;"></i> <a target="_blank" href="https://qm.qq.com/q/31SDG58TXy">248856433</a>'
       })
     );
 
