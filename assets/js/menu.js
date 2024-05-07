@@ -26,6 +26,11 @@ class Menu {
     }, 10000);
   }
 
+  // 1
+  // 2
+
+  // 3
+
   /**
    * Add or remove layer of the given list of markers based on the provided method.
    * @param {Array} markers - The list of markers to process.
