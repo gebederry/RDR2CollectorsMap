@@ -82,18 +82,26 @@ const Language = {
     });
   },
 
-  translateDom: function (context) {
+  translateDom: function (context, callback) {
     'use strict';
+    callback = callback || (() => {});
+  
     Array.from((context || document).querySelectorAll('[data-text]')).forEach(element => {
+      element.classList.add('placeholder');
+      element.parentElement.classList.add('placeholder-glow');
       const transKey = element.getAttribute('data-text');
       let string = Language.get(transKey, element.dataset.textOptional);
 
       // Don't dump raw variables out to the user here, instead make them appear as if they are loading.
-      string = string.replace(/\{([\w.]+)\}/g, (match, p1) =>
-        this.allowedPlaceholders.includes(p1) ? match : '---'
-      );
+      string = string.replace(/\{([\w.]+)\}/g, (match, p1) => {
+        if (this.allowedPlaceholders.includes(p1)) return match;
+        const replacement = Language.get(p1);
+        return replacement !== p1 ? replacement : '---';
+      });
       element.innerHTML = string;
     });
+  
+    callback();
     return context;
   },
 
@@ -135,7 +143,11 @@ const Language = {
     const wikiLang = Settings.language in wikiPages ? Settings.language : 'en';
     document.querySelector('.wiki-page').setAttribute('href', wikiBase + wikiPages[wikiLang]);
 
-    this.translateDom();
+    this.translateDom(null, () => {
+      document.querySelectorAll('.placeholder-glow, .placeholder').forEach((element) =>
+        element.classList.remove('placeholder-glow', 'placeholder')
+      );
+    });
 
     searchInput.setAttribute('placeholder', Language.get('menu.search_placeholder'));
     placeholdersToHtml(suggestionsHotkeys, {

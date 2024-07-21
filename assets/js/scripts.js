@@ -182,8 +182,8 @@ function init() {
   itemsCollectionsWeekly.then(MapBase.loadOverlays);
   MapBase.mapInit(); // MapBase.map
   const languages = Language.init().then(() => {
-    Language.setMenuLanguage();
-    Pins.init();
+  Pins.init();
+  Language.setMenuLanguage();
   });
   changeCursor();
   // MapBase.markers (without .lMarker), Item.items[].markers
