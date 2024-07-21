@@ -82,9 +82,12 @@ const Language = {
     });
   },
 
-  translateDom: function (context) {
+  translateDom: function (context, callback) {
     'use strict';
+    callback = callback || (() => {});
+  
     Array.from((context || document).querySelectorAll('[data-text]')).forEach(element => {
+      element.classList.add('placeholder');
       const transKey = element.getAttribute('data-text');
       let string = Language.get(transKey, element.dataset.textOptional);
 
@@ -94,6 +97,8 @@ const Language = {
       );
       element.innerHTML = string;
     });
+  
+    callback();
     return context;
   },
 
@@ -135,7 +140,10 @@ const Language = {
     const wikiLang = Settings.language in wikiPages ? Settings.language : 'en';
     document.querySelector('.wiki-page').setAttribute('href', wikiBase + wikiPages[wikiLang]);
 
-    this.translateDom();
+    this.translateDom(null, () => {
+      console.log('执行了 remove placeholder');
+      document.querySelectorAll('.placeholder').forEach(element => element.classList.remove('placeholder'));
+    });
 
     searchInput.setAttribute('placeholder', Language.get('menu.search_placeholder'));
     placeholdersToHtml(suggestionsHotkeys, {
