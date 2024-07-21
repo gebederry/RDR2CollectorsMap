@@ -400,6 +400,13 @@ function clockTick() {
   - only hope: user does not do anything until that happens
 - please move them out of here to their respective owners
 */
+
+// document.addEventListener('translationsLoaded', () => {
+//   document.querySelectorAll('.placeholder-glow, .placeholder').forEach(element => {
+//     element.classList.remove('placeholder-glow', 'placeholder');
+//   });
+// });
+
 document.querySelector('.side-menu').addEventListener('scroll', function () {
   // These are not equality checks because of mobile weirdness.
   const atTop = this.scrollTop <= 0;

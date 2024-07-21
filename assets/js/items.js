@@ -21,12 +21,12 @@ class BaseItem {
     this.legacyItemId && snippet.setAttribute('data-type', this.legacyItemId);
     snippet.setAttribute('data-help', this.weeklyHelpKey);
     snippet.innerHTML = `
-        <span>
+        <span class="placeholder-glow">
           <div class="icon-wrapper"><img class="icon"
             src="./assets/images/icons/game/${this.itemId}.png" alt="Weekly item icon"></div>
-          <span class="collectible" data-text="${this.itemTranslationKey}"></span>
+          <span class="collectible placeholder" data-text="${this.itemTranslationKey}"></span>
         </span>
-        <small class="counter-number counter-number-weekly">${this.amount}</small>
+        <small class="counter-number counter-number-weekly placeholder">${this.amount}</small>
     `;
     Language.translateDom(snippet);
     this.weeklyMenuButton = snippet;

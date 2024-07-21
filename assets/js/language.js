@@ -82,7 +82,7 @@ const Language = {
     });
   },
 
-  translateDom: function (context) {
+  translateDom: function (context, callback) {
     'use strict';
     Array.from((context || document).querySelectorAll('[data-text]')).forEach(element => {
       const transKey = element.getAttribute('data-text');
@@ -94,6 +94,16 @@ const Language = {
       );
       element.innerHTML = string;
     });
+  
+    if (typeof callback === 'function') {
+      const observer = new MutationObserver((mutationsList, observer) => {
+        callback();
+        observer.disconnect();
+      });
+  
+      observer.observe(context || document.body, { childList: true, subtree: true });
+    }
+  
     return context;
   },
 
@@ -135,13 +145,18 @@ const Language = {
     const wikiLang = Settings.language in wikiPages ? Settings.language : 'en';
     document.querySelector('.wiki-page').setAttribute('href', wikiBase + wikiPages[wikiLang]);
 
-    this.translateDom();
+    this.translateDom(null, () => {
 
-    searchInput.setAttribute('placeholder', Language.get('menu.search_placeholder'));
-    placeholdersToHtml(suggestionsHotkeys, {
-      '↑': '<kbd class="hotkey">↑</kbd>',
-      '↓': '<kbd class="hotkey">↓</kbd>',
-      'Enter': '<kbd class="hotkey">Enter</kbd>'
+      document.querySelectorAll('.placeholder-glow, .placeholder').forEach(element => {
+        element.classList.remove('placeholder-glow', 'placeholder');
+      });
+
+      searchInput.setAttribute('placeholder', Language.get('menu.search_placeholder'));
+      placeholdersToHtml(suggestionsHotkeys, {
+        '↑': '<kbd class="hotkey">↑</kbd>',
+        '↓': '<kbd class="hotkey">↓</kbd>',
+        Enter: '<kbd class="hotkey">Enter</kbd>'
+      });
     });
     
     FME.update();

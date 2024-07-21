@@ -1464,6 +1464,10 @@ a.no-style:visited {
     padding: 20px 5px 10px 5px;
 }
 
+.placeholder {
+    border-radius: 3px;
+}
+
 /* Fix buttons showing on top of sidebar on mobile menu */
 
 .leaflet-top,

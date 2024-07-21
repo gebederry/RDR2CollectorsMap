@@ -39,18 +39,19 @@ class Weekly extends BaseCollection {
     menuEntry.innerHTML = `
       <div class="header">
         <span class="header-border"></span>
-        <h2 class="header-title weekly-item-title" data-text="weekly.desc.${this.weeklyId}">
+        <h2 class="header-title weekly-item-title placeholder col-3" data-text="weekly.desc.${this.weeklyId}">
           Weekly Collection</h2>
         <span class="header-border"></span>
       </div>
       <div class="weekly-item-listings">
         <p>
-          <span class="weekly-flavor-text" data-text="weekly.flavor.${this.weeklyId}"></span>
-          <span data-text="menu.weekly_item_description">Find all the items listed and sell the complete collection to Madam Nazar for an XP and RDO$ reward.</span>
+          <span class="weekly-flavor-text placeholder col-12" data-text="weekly.flavor.${this.weeklyId}"></span>
+          <span class="placeholder col-12 placeholder-lg" data-text="menu.weekly_item_description">Find all the items listed and sell the complete collection to Madam Nazar for an XP and RDO$ reward.</span>
+          <span class="placeholder col-12 placeholder-lg"></span>
         </p>
         <div class="collection-value">
-          <span class="weekly-set-value" data-help="item_value">$${this.weeklySetValue.toFixed(2)}</span>
-          <button class="collection-sell btn btn-light" data-text="menu.sell" data-help="item_sell">Sell</button>
+          <span class="weekly-set-value placeholder" data-help="item_value">$${this.weeklySetValue.toFixed(2)}</span>
+          <button class="collection-sell btn btn-light placeholder" data-text="menu.sell" data-help="item_sell">Sell</button>
         </div>
       </div>
     `;
@@ -194,8 +195,8 @@ class Collection extends BaseCollection {
         <div class="menu-option clickable" data-type="${this.category}" data-help="item_category">
           <span>
             <img class="icon" src="assets/images/icons/${this.category}.png" alt="${this.category}">
-            <span>
-              <span class="menu-option-text" data-text="menu.${this.category}"></span>
+            <span class="placeholder-glow">
+              <span class="menu-option-text placeholder placeholder-xs" data-text="menu.${this.category}"></span>
               <img class="same-cycle-warning-menu" src="assets/images/same-cycle-alert.png">
             </span>
           </span>
