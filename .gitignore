@@ -17,3 +17,5 @@ rdo/
 # Remove map tiles from Github
 assets/maps/jpg
 assets/maps/webp
+data/cycles.json
+data/jewelry_timestamps.json

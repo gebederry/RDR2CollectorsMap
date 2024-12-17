@@ -42,7 +42,7 @@ cron('0 2 * * *', async () => {
       matchingCycle.date = currentDate
 
       let existingData = JSON.parse(
-        fs.readFileSync('/var/www/map.185000.xyz/data/cycles.json')
+        fs.readFileSync('/var/www/map/data/cycles.json')
       )
       // 移除第一个元素
       existingData.shift()
@@ -50,7 +50,7 @@ cron('0 2 * * *', async () => {
       existingData.push(matchingCycle)
       // 写入更新后的数据到data.json文件中
       fs.writeFileSync(
-        '/var/www/map.185000.xyz/data/cycles.json',
+        '/var/www/map/data/cycles.json',
         JSON.stringify(existingData, null, ' ')
       )
       console.log('数据已追加到 cycles.json 文件中')
@@ -106,7 +106,7 @@ cron('44 59 7 * * *', async () => {
     items: getStaticSpawnTS(jewOccCycles, currCycleST, data.next_cycle_times)
   }
   fs.writeFileSync(
-    '/var/www/map.185000.xyz/data/jewelry_timestamps.json',
+    '/var/www/map/data/jewelry_timestamps.json',
     JSON.stringify(staticSpawnTS, null, ' ')
   )
   console.info('随机遗失珠宝的固定位置时间戳数据已写入 jewelry_timestamps.json')
