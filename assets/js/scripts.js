@@ -534,7 +534,7 @@ searchInput.addEventListener('input', function () {
   document.getElementById('filter-type').value = 'none';
   if (!isMobile()) {
     suggestionsHotkeys.style.display = searchInput.value.trim() === '' ? '' : 'none';
-    document.querySelectorAll('#weekly-container .header, #weekly-container p').forEach((el) => el.classList.add('blurred'));
+    document.querySelectorAll('.side-menu .goto_another_site, #weekly-container .header, #weekly-container p').forEach((el) => el.classList.add('blurred'));
   }
   
   MapBase.onSearch(searchInput.value);
@@ -544,7 +544,7 @@ searchInput.addEventListener('input', function () {
 searchInput.addEventListener('focus', function () {
   if (!isMobile()) {
     suggestionsHotkeys.classList.toggle('focused', searchInput.value.trim() === '');
-    document.querySelectorAll('#weekly-container .header, #weekly-container p').forEach((el) => el.classList.add('blurred'));
+    document.querySelectorAll('.side-menu .goto_another_site, #weekly-container .header, #weekly-container p').forEach((el) => el.classList.add('blurred'));
   }
   this.addEventListener('keydown', function handleEscKey(event) {
     if (event.key === 'Escape') {
@@ -588,7 +588,7 @@ searchInput.addEventListener('blur', () => {
   hideSuggestionsTimeout = setTimeout(() => {
     if (!isMobile()) {
       suggestionsHotkeys.classList.remove('focused');
-      document.querySelectorAll('#weekly-container .header, #weekly-container p').forEach((el) => el.classList.remove('blurred'));
+      document.querySelectorAll('.side-menu .goto_another_site, #weekly-container .header, #weekly-container p').forEach((el) => el.classList.remove('blurred'));
     }
     suggestionsContainer.style.display = 'none';
     suggestionsContainer.innerHTML = '';
@@ -622,7 +622,7 @@ document.getElementById('copy-search-link').addEventListener('click', function (
 document.getElementById('clear-search').addEventListener('click', function () {
   searchInput.value = '';
   searchInput.dispatchEvent(new Event('input'));
-  document.querySelectorAll('#weekly-container .header, #weekly-container p').forEach((el) => el.classList.remove('blurred'));
+  document.querySelectorAll('.side-menu .goto_another_site, #weekly-container .header, #weekly-container p').forEach((el) => el.classList.remove('blurred'));
 });
 
 document.getElementById('reset-markers').addEventListener('change', function () {

@@ -1,6 +1,10 @@
 {
+  "type": "module",
   "dependencies": {
+    "@ilyagershman/easy-poll": "^3.0.14",
     "browserify": "^16.5.2",
-    "geojson-path-finder": "^1.5.2"
+    "croner": "^9.0.0",
+    "geojson-path-finder": "^1.5.2",
+    "node-fetch": "^3.3.2"
   }
 }

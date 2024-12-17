@@ -1836,11 +1836,11 @@ a.no-style:visited {
     user-select: none;
 }
 
-#weekly-container .blurred {
+.side-menu .blurred, #weekly-container .blurred {
     filter: blur(2px);
 }
 
-#weekly-container .header, #weekly-container p {
+.side-menu .goto_another_site, #weekly-container .header, #weekly-container p {
     transition: filter 0.3s ease;
 }
 
@@ -3056,6 +3056,10 @@ button.reload-nazar {
     justify-content: center;
     display: flex;
     padding: 12px 0 0 0;
+}
+
+.chrome-store-button img {
+    height: 64px;
 }
 
 /* Leaflet.ZoomEx */

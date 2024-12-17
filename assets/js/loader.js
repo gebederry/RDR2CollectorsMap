@@ -65,10 +65,10 @@ const urls = [
     'data/treasures.json',
     'data/updates.json',
     'data/weekly_sets.json',
+    'data/jewelry_timestamps.json',
     'https://api.rdo.gg/fme/',
     'https://pepegapi.jeanropke.net/v2/misc/timezone',
     'https://pepegapi.jeanropke.net/v2/rdo/nazar',
-    'https://pepegapi.jeanropke.net/v2/rdo/weekly',
-    'https://rdo-dailies.com/api/RDO/collector/jewelry_timestamps'
+    'https://pepegapi.jeanropke.net/v2/rdo/weekly'
 ];
 Loader.init(urls);

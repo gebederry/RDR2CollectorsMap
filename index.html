@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Red Dead Online - Collectors Map</title>
+  <title>收藏家地图 - Red Dead Online</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
   <meta name="description"
     content="Red Dead Online Collectors Map. Find all collectibles across the world and sell to Madam Nazar.">
@@ -52,6 +52,18 @@
   <link rel="stylesheet" href="assets/css/fancyselect.min.css"/>
   <link rel="stylesheet" href="assets/css/styles.css?nocache=1594" />
   <link rel="stylesheet" href="assets/css/tippy.css?nocache=1594" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-19MQ4BEMND"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-19MQ4BEMND');
+  </script>
 
   <script>
     const nocache = 1594;
@@ -117,6 +129,20 @@
       <div id="cycle-next" class="input-selection-arrow"><img src="assets/images/selection_right.png" alt="arrow"></div>
     </div>
 
+    <div class="header goto_another_site">
+      <span class="header-border"></span>
+      <h2 class="header-title">
+        <a class="no-style" href="https://rdo.185000.xyz/" target="_blank">
+          <div class="menu-option">
+            <span>
+              <span data-text="menu.link_to_another_map"></span>
+            </span>
+          </div>
+        </a>
+      </h2>
+      <span class="header-border"></span>
+    </div>
+
     <div class="links-container">
       <button class="btn btn-light" data-text="menu.hide_all" data-help="hide_all">Hide all</button>
       <button class="btn btn-light" data-text="menu.show_all" data-help="show_all">Show all</button>
@@ -154,7 +180,7 @@
           <span class="menu-option-text" data-text="menu.user_pins">User Pins</span>
         </span>
       </div>
-      <a class="no-style" href="https://jeanropke.github.io/RDOMap/" target="_blank">
+      <a class="no-style" href="https://rdo.185000.xyz/" target="_blank">
         <div class="menu-option">
           <span>
             <img class="icon" src="./assets/images/icons/random_encounter.png" alt="Category icon" />
@@ -1126,7 +1152,7 @@
         <label data-text="menu.show_updates">Show the latest updates</label>
         <div class="input-action"></div>
       </div>
-      <a class="no-style" href="https://jeanropke.github.io/RDOMap/" target="_blank">
+      <a class="no-style" href="https://rdo.185000.xyz/" target="_blank">
         <div class="input-container clickable" data-help="rdo_map">
           <label data-text="menu.rdo_map">RDO Map</label>
           <div class="input-action external"></div>
@@ -1525,6 +1551,18 @@
           <h4 class="modal-title" id="import-rdo-inventory-modal-title" data-text="menu.modal_import_rdo_inventory_title">Import RDO character inventory</h4>
         </div>
         <div class="modal-body" style="text-align: left;">
+          <p data-text="menu.modal_import_rdo_inventory_extension">You can sync your inventory using this extension. Just install it and press one button. Compatible with Chromium based browsers like Brave, Google Chrome, Microsoft Edge, Opera.</p>
+          <p class="chrome-store-button">
+            <a href="https://greasyfork.org/zh-CN/scripts/489493" target="_blank">
+              <img src="./assets/images/tampermonkey-greasyfork.png">
+            </a>
+          </p>
+          <div class="header">
+            <span class="header-border"></span>
+            <h2 class="header-title" data-text="menu.modal_import_rdo_inventory_manual">Manual</h2>
+            <span class="header-border"></span>
+          </div>
+          
           <p data-text="menu.modal_import_rdo_inventory_intro">To import your character inventory to this map, follow this steps:</p>
 
           <p data-text="menu.modal_import_rdo_inventory_step_1">1. <a href="https://socialclub.rockstargames.com/games/rdo/overview" target="_blank">Log in</a> your Social Club account.</p>
@@ -1601,19 +1639,6 @@
   <script src="assets/js/updates.js?nocache=1594"></script>
   <script src="assets/js/scripts.js?nocache=1594"></script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39999584-4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-39999584-4');
-
-  </script>
 </body>
 
 </html>

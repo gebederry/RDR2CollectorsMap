@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "message": "Rockstar updated the game and made some changes to the Collector role. Please visit the page below to read about what this means to you.",
+  "message": "Rockstar 在 2020 年 7 月 28 日的更新对收藏家职业作出了一些变更。请访问下方的链接以了解详情。",
   "lists": [
     {
-      "text": "Summary",
+      "text": "摘要",
       "items": [
-        "Fossils, Arrowheads and Coins are fully randomized;",
-        "Bracelets, Earrings, Necklaces and Rings are partially randomized;",
-        "Other sets are unaffected by the Naturalist update."
+        "化石、箭头和硬币完全随机；",
+        "遗失珠宝部分随机；",
+        "其它收藏品套装未变动。"
       ]
     }
   ],
   "links": [
     {
       "class": "primary",
-      "text": "Naturalist Changes FAQ",
+      "text": "博物学家更新须知",
       "url": "https://github.com/jeanropke/RDR2CollectorsMap/wiki/Naturalist-Update-Changes"
     }
   ]

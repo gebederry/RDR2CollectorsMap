@@ -1952,5 +1952,16 @@
     "menu.modal_import_rdo_inventory_step_3": "3. 来到 Social Club 网站，打开浏览器开发者工具的控制台/Console (F12)，粘贴步骤 2 中的脚本并按回车键。",
     "menu.modal_import_rdo_inventory_final": "如果一切顺利，将会下载一个包含您背包数据的文件。点击下方的按钮导入即可。",
     "menu.modal_import_rdo_inventory_manual": "手动导入",
-    "menu.modal_import_rdo_inventory_extension": "您可以使用此扩展来同步背包。只需安装然后一键。 兼容基于 Chromium 的浏览器，如 Brave、Google Chrome、Microsoft Edge 以及 Opera。"
+    "menu.modal_import_rdo_inventory_extension": "您可以使用此扩展来同步背包。只需安装然后一键。 兼容基于 Chromium 的浏览器，如 Brave、Google Chrome、Microsoft Edge 以及 Opera。",
+    "menu.link_to_another_map": "前往 RDO 地图",
+    "extension.inventory_sync_button": "同步",
+    "extension.inventory_sync_status": "点击同步按钮",
+    "extension.inventory_sync_syncing": "正在同步...",
+    "extension.inventory_sync_window_closed": "窗口已关闭",
+    "extension.inventory_sync_failed": "无法导入背包",
+    "extension.inventory_sync_success": "已同步",
+    "notification.extension.inventory_sync_title": "背包同步",
+    "notification.extension.inventory_sync_window_closed": "窗口已关闭",
+    "notification.extension.inventory_sync_failed": "背包同步失败",
+    "notification.extension.inventory_sync_success": "背包同步成功"
 }
